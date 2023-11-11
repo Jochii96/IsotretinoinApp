@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Isotretinoin2</string>
+    <string name="title">Isotretinoin Journey</string>
+    <string name="disc">The medication tracker application “Isotretinoin Journey” is intended for informational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. The Application does not provide medical or healthcare services, and any reliance on the information provided by the Application is solely at your own risk.
+The information presented in the Application is based on general principles and guidelines and may not be applicable to your specific medical condition or situation. It is essential to consult with a qualified healthcare professional before making any decisions or taking any actions based on the information provided by the Application.
+The Application is not responsible for any errors, omissions, or inaccuracies in the information provided or for any actions taken based on such information. The developers, owners, and affiliates of the Application shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of the use or inability to use the Application, even if advised of the possibility of such damages.
+By using the Application, you acknowledge and agree to release the developers, owners, and affiliates of the Application from any and all claims, liabilities, or damages arising out of or in connection with your use of the Application.
+Always consult with a qualified healthcare professional for personalized medical advice and treatment. Do not disregard professional medical advice or delay seeking it because of information obtained from the Application.
+</string>
+    <string name="start">START</string>
+    <string name="agree">I AGREE</string>
+    <string name="profile">PROFILE</string>
+    <string name="menu">MENU</string>
+    <string name="home">HOME</string>
+    <string name="settings">PROFILE SETTINGS</string>
+    <string name="appointments">APPOINTMENTS NOTES</string>
+    <string name="calculate">CALCULATE DOSE</string>
+    <string name="takebreak">TAKE A BREAK</string>
+
+
+</resources>

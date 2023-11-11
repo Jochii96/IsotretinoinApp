@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--Layout of the Starting screen-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sun_glow"
+    tools:context=".MainActivity">
+
+    <!--Title of the application displayed at the center top-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="332dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="151dp"
+        android:fontFamily="@font/fontpoppins"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Button that navigates user to the Disclaimer activity-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStart"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/fontpoppins"
+        android:shadowColor="@color/black"
+        android:text="@string/start"
+        android:textColor="@color/sun_glow"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!--Image of the road/path reflecting the application's name-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="209dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_tree"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.686" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

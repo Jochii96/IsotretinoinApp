@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!--Layout of the Menu screen-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sun_glow"
+        android:backgroundTint="@color/sun_glow"
+        android:orientation="vertical">
+        <!--Title of the Screen displayed at the top-->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <!--Button that navigates to the Main Screen activity -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/sun_glow"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/home"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="italic" />
+        <!--Button that navigates to the Profile Edit activity -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonProfile2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/sun_glow"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="italic" />
+        <!--Button that navigates to the Appointments Notes activity -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/sun_glow"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/appointments"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="italic" />
+        <!--Button that navigates to the Calculate Dose activity -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/sun_glow"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/calculate"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="italic" />
+        <!--Button that navigates to the Take a Break activity -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/sun_glow"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/takebreak"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+</LinearLayout>

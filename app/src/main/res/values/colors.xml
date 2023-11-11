@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cadet_blue">#FF88AEBF</color>
+    <color name="ash_grey">#FFA0BABA</color>
+    <color name="melon">#FEB4AE</color>
+    <color name="sun_glow">#FFCF33</color>
+    <color name="tiffany">#FF0ABAB5</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#FF48494B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bright_tiff">#FF30C8C3</color>
+    <color name="melonish">#fed2ce</color>
+</resources>

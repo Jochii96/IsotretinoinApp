@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><!--Layout of the Profile screen-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/melon"
+    android:backgroundTint="@color/melon"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <!--Title of the Screen displayed at the top-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/fontpoppins"
+        android:text="@string/profile"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!--User types their name in this field-->
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:fontFamily="@font/fontpoppins"
+        android:hint="TYPE  YOUR NAME HERE"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textSize="20sp" />
+
+    <!--User types their daily dose in this field-->
+    <EditText
+        android:id="@+id/userDose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:fontFamily="@font/fontpoppins"
+        android:hint="ENTER YOUR DAILY DOSE HERE"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textSize="20sp" />
+
+    <!--Information on the content below-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/fontpoppins"
+        android:text="WHEN DO YOU TAKE YOUR MEDICATION?"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:orientation="horizontal">
+
+        <!--Time chosen by the user from the first time picker will be displayed in this field-->
+        <EditText
+            android:id="@+id/time1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/fontpoppins"
+            android:hint="AM"
+            android:inputType="time"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <!--This button let's user using time picker to pick the first time for their reminder-->
+        <Button
+            android:id="@+id/buttonSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:fontFamily="@font/fontpoppins"
+            android:onClick="popTimePicker"
+            android:text="Set Time"
+            android:textColor="@color/melon"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:orientation="horizontal">
+
+        <!--Time chosen by the user from the second time picker will be displayed in this field-->
+        <EditText
+            android:id="@+id/time2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/fontpoppins"
+            android:hint="PM"
+            android:inputType="time"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <!--This button let's user using time picker to pick the second time for their reminder-->
+        <Button
+            android:id="@+id/buttonSet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:fontFamily="@font/fontpoppins"
+            android:onClick="popTimePicker2"
+            android:text="Set Time"
+            android:textColor="@color/melon"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical">
+
+        <!-- Pressing this button saves all the changes and directs user to the MainScreen activity-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonConfirm"
+            android:layout_width="135dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@color/grey"
+            android:fontFamily="@font/fontpoppins"
+            android:gravity="center"
+            android:text="CONFIRM"
+            android:textColor="@color/melon"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
